@@ -9,6 +9,7 @@ html {
 }
 body {
 	font-family: "open sans", sans-serif;
+	background-color: black;
 }
 .container {
 	margin: 0 auto;
@@ -33,3 +34,28 @@ body {
 	}
 }
 /* End Global Rules */
+/* Start Header */
+header {
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+header .container::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	width: calc(100% - 30px);
+	height: 1px;
+	background-color: #a2a2a2;
+}
+header .logo img {
+	height: 40px;
+}
+header nav {
+	flex: 1;
+}
+/* End Header */
