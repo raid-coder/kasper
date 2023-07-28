@@ -44,12 +44,17 @@ ul {
 /* End Global Rules */
 /* Start Header */
 header {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 2;
 }
 header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	min-height: 97px;
 }
 header .container::after {
 	content: "";
@@ -69,8 +74,34 @@ header nav {
 	justify-content: flex-end;
 	align-items: center;
 }
+nav .toggle-menu {
+	color: white;
+	font-size: 22px;
+}
+@media (min-width: 768px) {
+	nav .toggle-menu {
+		display: none;
+	}
+}
 nav ul {
 	display: flex;
+}
+@media (max-width: 767px) {
+	nav ul {
+		display: none;
+	}
+	nav .toggle-menu:hover + ul {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.586);
+	}
+	nav .toggle-menu:hover + ul a {
+		padding: 15px;
+	}
 }
 nav a {
 	padding: 40px 10px;
