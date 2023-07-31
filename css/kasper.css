@@ -452,17 +452,22 @@ header nav .form i {
 	left: 0;
 	background-color: var(--transparent-color);
 	padding: 50px;
+	text-align: center;
+	color: white;
 }
 .video-section h2 {
 	text-transform: uppercase;
-	color: white;
+	margin-bottom: 30px;
+	font-weight: normal;
 }
 .video-section p {
-	color: white;
+	margin-bottom: 30px;
 }
 .video-section button {
 	text-transform: uppercase;
 	color: white;
 	background-color: black;
+	padding: 10px 20px;
+	border: none;
 }
 /* End Video Section */
