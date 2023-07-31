@@ -490,3 +490,60 @@ header nav .form i {
 	}
 }
 /* End About */
+/* Start Stats */
+.stats {
+	padding: var(--section-padding) 0;
+	background-image: url(../images/stats.png);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+}
+.stats::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000a;
+}
+.stats .container {
+	background-color: var(--transparent-color);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.stats .stat-box {
+	padding: 50px;
+	flex-basis: calc(100%);
+}
+@media (min-width: 992px) {
+	.stats .stat-box {
+		flex-basis: calc(50%);
+	}
+}
+@media (min-width: 1200px) {
+	.stats .stat-box {
+		flex-basis: calc(25%);
+	}
+}
+.stats .stat-box i {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin: 0 auto 30px;
+}
+.stats .stat-box .number {
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.stats .stat-box p {
+	font-size: 14px;
+}
+/* End Stats */
