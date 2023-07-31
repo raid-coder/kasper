@@ -617,4 +617,46 @@ header nav .form i {
 	background-color: var(--main-color);
 	border-color: var(--main-color);
 }
+.skills-section .skills .prog-holder {
+	margin-bottom: 40px;
+}
+.skills-section .skills .prog-holder h4 {
+	margin-bottom: 5px;
+	color: #666;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.skills-section .skills .prog-holder .prog {
+	height: 30px;
+	width: 100%;
+	background-color: #ddd;
+	position: relative;
+}
+.skills-section .skills .prog-holder .prog span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: var(--main-color);
+}
+.skills-section .skills .prog-holder .prog span::before {
+	content: attr(data-progress);
+	position: absolute;
+	right: 0;
+	padding: 4px;
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	translate: 50% calc(-100% - 8px);
+	font-weight: bold;
+	border-radius: 4px;
+}
+.skills-section .skills .prog-holder .prog span::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	border: 5px solid black;
+	border-color: black transparent transparent;
+	translate: 50% calc(-100%);
+}
 /* End Skills */
