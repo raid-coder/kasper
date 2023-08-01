@@ -21,6 +21,19 @@ body {
 ul {
 	list-style: none;
 }
+q::before,
+q::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 16px;
+	vertical-align: super;
+}
+q::after {
+	content: "\f10e";
+}
+q::before {
+	content: "\f10d";
+}
 .container {
 	margin: 0 auto;
 	padding: 0 15px;
@@ -682,12 +695,88 @@ header nav .form i {
 	position: relative;
 	font-weight: bold;
 	font-size: 1.5rem;
+	display: block;
+	margin-bottom: 10px;
 }
 .quote span {
 	position: relative;
 	font-size: 14px;
 	font-weight: bold;
-	display: block;
-	margin-top: 20px;
 }
 /* End Quote */
+/* Start Pricing */
+.pricing {
+	padding: var(--section-padding) 0;
+	text-align: center;
+}
+.pricing .pricing-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 80px;
+}
+.pricing .pricing-content .price-tag {
+	padding: 30px;
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+.pricing .pricing-content .price-tag .category {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #666;
+	font-size: 14px;
+}
+.pricing .pricing-content .price-tag .price {
+	font-size: 50px;
+}
+.pricing .pricing-content .price-tag .price .dollar {
+	font-size: 20px;
+	vertical-align: super;
+}
+.pricing .pricing-content .price-tag .price .mo {
+	font-size: 10px;
+	color: #666;
+}
+.pricing .features-container {
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 40px;
+}
+.pricing .pricing-content .features {
+	width: fit-content;
+	margin: 0 auto;
+}
+.pricing .pricing-content .features .feature-box {
+	padding: 25px 0;
+	color: #666;
+}
+.pricing .pricing-content .features .feature-box:not(:last-child) {
+	border-bottom: 1px solid var(--main-color);
+}
+.pricing .pricing-content .buy {
+	padding: 10px 20px;
+	background-color: white;
+	border: 1px solid var(--main-color);
+	cursor: pointer;
+	transition: color 0.2s, background-color 0.2s;
+	color: #666;
+}
+.pricing .pricing-content .buy:hover {
+	background-color: var(--main-color);
+	color: white;
+}
+.pricing .contact-us p {
+	color: #666;
+	margin-bottom: 30px;
+}
+.pricing .contact-us button {
+	background-color: var(--main-color);
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+.pricing .contact-us button:hover {
+	opacity: 0.8;
+}
+/* End Pricing */
