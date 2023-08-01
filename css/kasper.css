@@ -660,3 +660,34 @@ header nav .form i {
 	translate: 50% calc(-100%);
 }
 /* End Skills */
+/* Start Quote */
+.quote {
+	padding: var(--section-padding) 0;
+	background-image: url(../images/quote.jpg);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.quote::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0008;
+}
+.quote q {
+	position: relative;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.quote span {
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin-top: 20px;
+}
+/* End Quote */
