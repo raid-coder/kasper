@@ -50,7 +50,7 @@ q::before {
 		width: 970px;
 	}
 }
-/* Medium */
+/* Large */
 @media (min-width: 1200px) {
 	.container {
 		width: 1170px;
