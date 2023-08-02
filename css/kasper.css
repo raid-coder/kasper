@@ -917,3 +917,46 @@ header nav .form i {
 	}
 }
 /* End Contact */
+/* Start Footer */
+.footer {
+	padding: calc(var(--section-padding) / 2) 0;
+	background-image: url(../images/subscribe.jpg);
+	background-size: cover;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+.footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0008;
+}
+.footer .container {
+	position: relative;
+}
+.footer img {
+	margin-bottom: 20px;
+}
+.footer p:first-of-type {
+	text-transform: uppercase;
+	padding: 20px;
+	border-bottom: 1px solid white;
+	font-size: 22px;
+	width: fit-content;
+	margin: 20px auto;
+}
+.social-icons i {
+	padding: 10px 15px;
+}
+.copyright {
+	margin-top: 60px;
+}
+.copyright span {
+	font-weight: bold;
+	color: var(--main-color);
+}
+/* End Footer */
